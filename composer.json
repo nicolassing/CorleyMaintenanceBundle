@@ -4,6 +4,9 @@
     "description": "Corley Maintenance Bundle",
     "keywords": ["Maintenance management", "503", "apache2", "apache", "nginx", "maintenance"],
     "license": "MIT",
+    "replace": {
+        "corley/maintenance-bundle": "self.version"
+    },
     "autoload": {
         "psr-4": {
             "Corley\\MaintenanceBundle\\": "src/"
