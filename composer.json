@@ -5,9 +5,15 @@
     "keywords": ["Maintenance management", "503", "apache2", "apache", "nginx", "maintenance"],
     "license": "MIT",
     "autoload": {
-        "psr-0": { "Corley\\MaintenanceBundle": "" }
+        "psr-4": {
+            "Corley\\MaintenanceBundle\\": "src/"
+        }
     },
-    "target-dir": "Corley/MaintenanceBundle",
+    "autoload-dev": {
+        "psr-4": {
+            "Corley\\MaintenanceBundle\\Tests\\": "tests/"
+        }
+    },
     "require": {
         "php": ">=7.2",
         "symfony/framework-bundle": "^3.4|^4.2|^5.0",
